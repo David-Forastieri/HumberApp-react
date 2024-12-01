@@ -1,0 +1,28 @@
+
+.main_list {
+    width: 700px;
+    padding: 30px;
+}
+
+.custom-collapse .ant-collapse-header {
+    display: flex;
+    align-items: center;
+}
+
+.custom-collapse .ant-collapse-header .ant-collapse-arrow {
+    margin-top: auto;
+    margin-top: 20px;
+}
+
+.header_main {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 20px ;
+}
+
+.main_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
