@@ -7,8 +7,10 @@ const {Panel} = Collapse
 
 const List = ({civilList}) => {
 
-  return (
-    <div className='main_list'>
+    if(civilList.length === 0) return <p>Cargando lista....</p>
+
+    return (
+        <div className='main_list'>
             <Collapse className='custom-collapse' accordion>
                 {civilList.map((data, index) => (
                     <Panel header={<EntryData nationData={data} />} key={index}>
@@ -17,7 +19,7 @@ const List = ({civilList}) => {
                 ))}
             </Collapse>
         </div>
-  )
+   )
 }
 
 export default List

@@ -9,8 +9,7 @@ export default defineConfig({
       '/api': {
         target: 'https://www.aoepulse.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/api/v1/civ_win_rates/'),
-        secure: true,
+        secure: false,
         headers: {
           'Accept': 'application/json',
         },
